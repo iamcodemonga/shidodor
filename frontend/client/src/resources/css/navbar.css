@@ -1,0 +1,38 @@
+.navbar {
+  background-color: var(--secondary);
+}
+
+.navbar-nav a {
+  color: var(--textAccent) !important;
+}
+
+.navbar-nav a:hover {
+  color: var(--text) !important;
+}
+
+.navbar-nav .active {
+  color: var(--Accent) !important;
+  transition: all 0.5s;
+}
+
+.navbar-nav .active:hover {
+  color: var(--Accent) !important;
+  font-weight: bolder;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav .active::before {
+    content: "|";
+    padding-right: 5px;
+  }
+}
+
+.navbar-brand {
+  color: var(--Accent) !important;
+}
+
+.toggler-icon {
+  color: var(--text);
+  font-size: 25px;
+}
+

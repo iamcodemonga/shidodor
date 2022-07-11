@@ -1,0 +1,36 @@
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: var(--secondary);
+}
+
+.content-links {
+  max-width: 400px;
+}
+
+.footer-content-cover {
+  max-width: 500px;
+}
+
+footer p {
+  color: var(--textAccent);
+}
+
+.social-links {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 30px;
+}
+
+.content-item {
+  /*text-decoration: none;*/
+  color: var(--text);
+  /*font-size: 20px;*/
+}
+
+.content-item:hover {
+  text-decoration: none;
+  color: var(--Accent);
+  /*font-size: 20px;*/
+}
+

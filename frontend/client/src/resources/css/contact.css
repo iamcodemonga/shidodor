@@ -1,0 +1,65 @@
+@media (min-width: 992px) {
+  .form-control {
+    background-color: var(--secondary);
+    color: var(--text);
+    box-shadow: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .form-control {
+    background-color: var(--secondary);
+    color: var(--text);
+    box-shadow: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding: 13px;
+  }
+}
+
+.form-control:focus {
+  background-color: var(--secondary);
+  color: var(--text);
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+@media (min-width: 992px) {
+  .contact-wrapper {
+    width: 100%;
+    /*min-height: 200px;*/
+    /*padding-top: 80px;*/
+    padding-bottom: 150px;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-wrapper {
+    width: 100%;
+    /*min-height: 200px;*/
+    /*padding-top: 80px;*/
+    padding-bottom: 50px;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact-wrapper img {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 991px) {
+  .contact-wrapper img {
+    display: none;
+    object-fit: cover;
+  }
+}
+

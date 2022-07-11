@@ -1,0 +1,116 @@
+@media (min-width: 992px) {
+  .single-header {
+    padding: 100px 0;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 991px) {
+  .single-header {
+    padding: 30px 0;
+    overflow-x: hidden;
+  }
+}
+
+.single-header video {
+  object-fit: cover;
+  /*border-radius: 20px;*/
+}
+
+@media (min-width: 992px) {
+  .single-header iframe {
+    object-fit: cover;
+    width: 100%;
+    height: 360px;
+    /*border-radius: 20px;*/
+  }
+}
+
+@media (max-width: 991px) {
+  .single-header iframe {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+    /*border-radius: 20px;*/
+  }
+}
+
+.single-header h1 {
+  color: var(--Accent);
+}
+
+@media (min-width: 992px) {
+  .recommended-section {
+    padding-top: 0;
+    padding-bottom: 100px;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 991px) {
+  .recommended-section {
+    padding: 20px 0;
+    overflow-x: hidden;
+  }
+}
+
+.video-card-link {
+  text-decoration: none;
+  color: white;
+  margin-right: 40px;
+}
+
+.video-card-link:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.video-card {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: background .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.video-overlay {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-end;
+  background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8));
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: background .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.video-card:hover .video-overlay {
+  background: linear-gradient(rgb(0,0,0,0.5),rgb(63,164,9,0.3));
+}
+
+.video-card img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary);
+  object-fit: cover;
+  object-position: center;
+}
+
+.video-card-icon {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  color: white;
+  font-size: 70px;
+  transform: translateX(-50%);
+}
+

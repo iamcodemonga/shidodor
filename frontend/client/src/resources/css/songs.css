@@ -1,0 +1,108 @@
+@media (min-width: 992px) {
+  .form-control {
+    background-color: var(--secondary);
+    color: var(--text);
+    box-shadow: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .form-control {
+    background-color: var(--secondary);
+    color: var(--text);
+    box-shadow: none;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding: 13px;
+  }
+}
+
+.form-control:focus {
+  background-color: var(--secondary);
+  color: var(--text);
+  box-shadow: none;
+  outline: none;
+  border: none;
+}
+
+@media (min-width: 992px) {
+  .content-wrapper {
+    width: 100%;
+    /*min-height: 200px;*/
+    /*padding-top: 80px;*/
+    padding-bottom: 150px;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 991px) {
+  .content-wrapper {
+    width: 100%;
+    /*min-height: 200px;*/
+    /*padding-top: 80px;*/
+    padding-bottom: 50px;
+    overflow-x: hidden;
+  }
+}
+
+.song-card-B {
+  height: 400px;
+  width: 100%;
+  /*aspect-ratio: 1/4;*/
+  object-fit: cover;
+  position: relative;
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.song-overlay {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.8));
+  -moz-transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.song-card-B:hover .song-overlay {
+  background: linear-gradient(rgb(0,0,0,0.5),rgb(63,164,9,0.3));
+}
+
+.song-card-B img {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--secondary);
+  object-fit: cover;
+  object-position: center;
+}
+
+.song-card-icon {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+.song-card-link {
+  text-decoration: none;
+  color: white;
+  margin-right: 40px;
+}
+
+.song-card-link:hover {
+  text-decoration: none;
+  color: white;
+}
+

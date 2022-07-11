@@ -1,0 +1,32 @@
+.sidebar.sidebar-dark.accordion.bg-gradient-primary {
+  background: #3FA409;
+}
+
+.btn-brand {
+  background-color: #3fa409;
+  color: white;
+}
+
+.rotate-n-15 {
+  transform: rotate(0deg);
+}
+
+.login-card {
+  height: 500px;
+}
+
+.login-card .bg-login-image {
+  height: 500px;
+}
+
+.bg-gradient-primary {
+  background-image: url("https://images.pexels.com/photos/12070097/pexels-photo-12070097.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  /* width: 100vw !important; */
+}
+
+/* .nav-link:active {
+  color: #ffffff;
+} */

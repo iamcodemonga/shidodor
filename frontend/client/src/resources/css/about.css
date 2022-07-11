@@ -1,0 +1,33 @@
+@media (min-width: 992px) {
+  .info-wrapper {
+    width: 100%;
+    /*min-height: 200px;*/
+    padding-top: 150px;
+    padding-bottom: 150px;
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 991px) {
+  .info-wrapper {
+    width: 100%;
+    /*min-height: 200px;*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 992px) {
+  .info-wrapper img {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 991px) {
+  .info-wrapper img {
+    /*display: none;*/
+    object-fit: cover;
+  }
+}
+
