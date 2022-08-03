@@ -21,9 +21,9 @@ export default function Topbar() {
               <li className="nav-item">
                 <NavLink className="nav-link" to="/songs" >Songs</NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink className="nav-link" to="/albums" >Albums</NavLink>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <NavLink className="nav-link" to="/videos" >Videos</NavLink>
               </li>

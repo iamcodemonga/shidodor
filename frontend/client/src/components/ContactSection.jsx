@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { Alert } from 'react-bootstrap';
+import LegendImage from '../resources/img/shidodorImg.jpg';
 
 export default function ContactSection() {
 
@@ -66,7 +67,8 @@ export default function ContactSection() {
             <div className="container mt-4">
                 <div className="row gx-5 gy-4">
                     <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                        <img className="w-100 h-100" src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Legend_image" />
+                        {/* <img className="w-100 h-100" src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Legend_image" /> */}
+                        <img className="w-100 h-100" src={LegendImage} alt="Legend_image" />
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                         <form onSubmit={handleSubmit}>

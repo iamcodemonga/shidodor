@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import LegendImage from '../resources/img/shidodorImg.jpg';
 
 export default function Biography() {
     return (
@@ -7,7 +8,8 @@ export default function Biography() {
                 <div className="row gx-5 gy-4">
                     <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                         <div>
-                            <img className="w-100" src="https://m.media-amazon.com/images/I/61NHYftHg0L._SY355_.jpg" alt='Legend_img'/>
+                            {/* <img className="w-100" src="https://m.media-amazon.com/images/I/61NHYftHg0L._SY355_.jpg" alt='Legend_img'/> */}
+                            <img className="w-100" src={LegendImage} alt='Legend_img'/>
                         </div>
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">

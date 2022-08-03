@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Banner from '../components/HomeBanner';
 import LatestSongs from '../components/LatestSongs';
-import TopAlbums from '../components/TopAlbums';
+// import TopAlbums from '../components/TopAlbums';
 import PreBanner from '../components/Prebanner';
 import MusicVideos from '../components/TopVideos';
 import About from '../components/HomeBio';
@@ -16,7 +16,7 @@ export default function Home() {
     const [ pageLoading, setPageLoading ] = useState(true);
 
     const [ latestSongs, setLatestSongs ] = useState([]);
-    const [ topAlbums, setTopAlbums ] = useState([]);
+    // const [ topAlbums, setTopAlbums ] = useState([]);
     const [ trendingVideos, setTrendingVideos ] = useState([]);
 
 
@@ -33,11 +33,11 @@ export default function Home() {
                 const response = await axios.get(`${REACT_APP_API_ROOT}`);
 
                 const songs = response.data.latestSongs;
-                const albums = response.data.topAlbums;
+                // const albums = response.data.topAlbums;
                 const videos = response.data.trendingVideos;
 
                 setLatestSongs(songs);
-                setTopAlbums(albums);
+                // setTopAlbums(albums);
                 setTrendingVideos(videos);
                 setPageLoading(false)
 
@@ -60,7 +60,7 @@ export default function Home() {
                     <Topbar />
                     <Banner />
                     <LatestSongs songs={latestSongs} />
-                    <TopAlbums albums={topAlbums} />
+                    {/* <TopAlbums albums={topAlbums} /> */}
                     <PreBanner />
                     <MusicVideos videos={trendingVideos} />
                     <About />

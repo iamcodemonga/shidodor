@@ -1,32 +1,35 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom'
 
 export default function LatestSongs({ songs }) {
 
     const { REACT_APP_API_ROOT } = process.env;
-    console.log(songs)
 
-    const productContainers = [...document.querySelectorAll('.content-container')];
-    const nextbtn = [...document.querySelectorAll('.nextbtn')];
-    const prevbtn = [...document.querySelectorAll('.prevbtn')];
+    useEffect(() =>{
 
-    productContainers.forEach((item, i) => {
-        // let containerDimentions = item.getBoundingClientRect();
-        // let containerWidth = containerDimentions.width;
-        let containerWidth = 390;
-        
-        nextbtn[i].addEventListener('click', () => {
-            item.scrollLeft += containerWidth;
+        const productContainers = [...document.querySelectorAll('.content-container')];
+        const nextbtn = [...document.querySelectorAll('.nextbtn')];
+        const prevbtn = [...document.querySelectorAll('.prevbtn')];
+
+        productContainers.forEach((item, i) => {
+            // let containerDimentions = item.getBoundingClientRect();
+            // let containerWidth = containerDimentions.width;
+            let containerWidth = 390;
+            
+            nextbtn[i].addEventListener('click', () => {
+                item.scrollLeft += containerWidth;
+            });
+            
+            prevbtn[i].addEventListener('click', () => {
+                item.scrollLeft -= containerWidth;
+            });
         });
-        
-        prevbtn[i].addEventListener('click', () => {
-            item.scrollLeft -= containerWidth;
-        });
-    });
+
+    },[])
 
     return (
     <section id="songs">
-        <div className="container">
+        <div className="container mb-5 pb-5">
             <div className="d-flex align-items-center justify-content-between">
                 <h4 className="mb-5">Latest Songs</h4>
                 <div>

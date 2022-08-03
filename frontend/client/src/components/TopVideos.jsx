@@ -9,7 +9,7 @@ export default function TopVideos({ videos }) {
         <section id="videos">
             <div className="container">
                 <h4 className="mb-5">Music Videos</h4>
-                <div className="row gx-5 gy-5">
+                <div className="row gx-5 gy-2">
                     {videos && videos.map((video, index) => <div className="col-sm-12 col-md-12 col-lg-6 col-xl-4 col-xxl-4" key={video.id}>
                         <Link className="video-card-link h-100" to={`/video/${video.uid}`}>
                             <div className="video-card">
