@@ -28,7 +28,7 @@ export default function DonateSection() {
         if(firstname && lastname && email && amount) {
             const paystack = new PaystackPop();
             paystack.newTransaction({
-                key: 'pk_test_8abfe4c759803140c25a6cc4186db85fab290775',
+                key: 'pk_live_184daa5279adbbbcde84f080812dd449499164a4',
                 amount: amount * 100,
                 email,
                 firstname,
@@ -94,16 +94,16 @@ export default function DonateSection() {
             {loading ? <PageLoader /> :
             <section className="vh-100 w-100 d-flex justify-content-center align-items-center">
                 <div className="px-3" style={{maxWidth: 700}}>
-                    <h3 style={{color: 'var(--Accent)'}}>SUPPORT CHIDODO MUSIC&nbsp;</h3>
-                    <p className="mb-4">This website is currently under production/development, it will open when its complete.</p>
+                    <h3 style={{color: 'var(--Accent)'}}>SUPPORT OGENE MUSIC&nbsp;</h3>
+                    <p className="mb-4">We are, and will always be grateful for your donations to our music as we continue to create inspiration through ogene music.</p>
                     <form onSubmit={payWithPaystack}>
                         <div>
                             <label className="form-label">Firstname</label>
-                            <input className="form-control" type="text" name="name" placeholder="e.g John smith" value={firstname} onChange={(e) => setFirstName(e.target.value)} />
+                            <input className="form-control" type="text" name="name" placeholder="e.g John" value={firstname} onChange={(e) => setFirstName(e.target.value)} />
                         </div>
                         <div className="my-4">
                             <label className="form-label">Lastname</label>
-                            <input className="form-control" type="text" name="name" placeholder="e.g John smith" value={lastname} onChange={(e) => setLastName(e.target.value)} />
+                            <input className="form-control" type="text" name="name" placeholder="e.g smith" value={lastname} onChange={(e) => setLastName(e.target.value)} />
                         </div>
                         <div className="my-4">
                             <label className="form-label">Email</label>
@@ -113,14 +113,14 @@ export default function DonateSection() {
                             <label className="form-label">Amount</label>
                             <select className="form-select form-control" value={amount} onChange={(e) => setAmount(e.target.value)}>
                                 <optgroup label="Donation amount">
-                                    <option value={10000}>NGN 10,000</option>
                                     <option value={5000}>NGN 5000</option>
                                     <option value={2000}>NGN 2000</option>
                                     <option value={1000}>NGN 1000</option>
+                                    <option value={500}>NGN 500</option>
                                 </optgroup>
                             </select>
                         </div>
-                        <button className="btn btn-success btn-lg mt-5 w-100" type="submit">Donate</button>
+                        <button className="btn btn-success btn-lg mt-5 mb-3 w-100" type="submit">Donate</button>
                     </form>
                 </div>
             </section>

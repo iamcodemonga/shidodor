@@ -10,8 +10,8 @@ export default function HomeBanner() {
             <img src={HeroImg} alt="legend" />
             <div className="hero-overlay">
                 <div className="hero-content px-4">
-                    <h1>WELCOME TO OFFICIAL SHIDODOR MUSIC WEBSITE</h1>
-                    <p className="my-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+                    <h2 className="coloured-h2">YOU ARE WELCOME TO SHIDODOR  NWANKANU MUSIC WORLDWIDE</h2>
+                    <p className="my-4">The best platform for cultural entertainment services, download all our recent and old album here. Contact and book us for advertisements and events entertainment show.</p>
                     <Link className="btn btn-success" role="button" to="/songs">Get Songs!</Link>
                 </div>
             </div>

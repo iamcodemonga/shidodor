@@ -93,7 +93,7 @@
 }
 
 .video-card:hover .video-overlay {
-  background: linear-gradient(rgb(0,0,0,0.5),rgb(63,164,9,0.3));
+  background: linear-gradient(rgb(0,0,0,0.5),rgba(43, 189, 165, 0.3));
 }
 
 .video-card img {
